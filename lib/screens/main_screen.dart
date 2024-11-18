@@ -16,19 +16,19 @@ class MainScreen extends StatelessWidget {
         backgroundColor: themeProvider.themeData.primaryColor, // Header berubah sesuai tema
       ),
       body: Container(
-        decoration: const BoxDecoration(
-          color: Colors.white,
+        decoration: BoxDecoration(
+          color: themeProvider.themeData.scaffoldBackgroundColor, // Latar belakang berubah sesuai tema
         ),
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const SizedBox(height: 20),
-              const Text(
+              Text(
                 'Selamat Datang',
                 style: TextStyle(
                   fontSize: 20,
-                  color: Colors.black,
+                  color: themeProvider.themeData.primaryColorDark, // Gunakan warna teks dari tema
                 ),
               ),
               const SizedBox(height: 20),
